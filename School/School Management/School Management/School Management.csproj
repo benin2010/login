@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6D97328F-4A53-41EF-BB3D-641877B0F03C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>School_Management</RootNamespace>
+    <AssemblyName>School Management</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.7.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.7.9\lib\net45\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add_book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_book.Designer.cs">
+      <DependentUpon>Add_book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_class.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_class.Designer.cs">
+      <DependentUpon>Add_class.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Fine_stf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Fine_stf.Designer.cs">
+      <DependentUpon>Add_Fine_stf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_fine_stu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_fine_stu.Designer.cs">
+      <DependentUpon>Add_fine_stu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Loc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Loc.Designer.cs">
+      <DependentUpon>Add_Loc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Nonstaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Nonstaff.Designer.cs">
+      <DependentUpon>Add_Nonstaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_publisher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_publisher.Designer.cs">
+      <DependentUpon>Add_publisher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Subject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Subject.Designer.cs">
+      <DependentUpon>Add_Subject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Application_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application_Form.Designer.cs">
+      <DependentUpon>Application_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Approval_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Approval_form.Designer.cs">
+      <DependentUpon>Approval_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Art_Eve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Art_Eve.Designer.cs">
+      <DependentUpon>Art_Eve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assign_class.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assign_class.Designer.cs">
+      <DependentUpon>Assign_class.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assign_Subject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assign_Subject.Designer.cs">
+      <DependentUpon>Assign_Subject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Author.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Author.Designer.cs">
+      <DependentUpon>Author.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Booktype.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Booktype.Designer.cs">
+      <DependentUpon>Booktype.cs</DependentUpon>
+    </Compile>
+    <Compile Include="data.cs" />
+    <Compile Include="Fee_amount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee_amount.Designer.cs">
+      <DependentUpon>Fee_amount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fee_type.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fee_type.Designer.cs">
+      <DependentUpon>fee_type.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hel_eve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hel_eve.Designer.cs">
+      <DependentUpon>hel_eve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Issue_Book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Issue_Book.Designer.cs">
+      <DependentUpon>Issue_Book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="language_eva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="language_eva.Designer.cs">
+      <DependentUpon>language_eva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login_page.Designer.cs">
+      <DependentUpon>login_page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_pg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_pg.Designer.cs">
+      <DependentUpon>Login_pg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="maths_eval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="maths_eval.Designer.cs">
+      <DependentUpon>maths_eval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Per_eve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Per_eve.Designer.cs">
+      <DependentUpon>Per_eve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Return Book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Return Book.Designer.cs">
+      <DependentUpon>Return Book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="science_eva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="science_eva.Designer.cs">
+      <DependentUpon>science_eva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="staff_att.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staff_att.Designer.cs">
+      <DependentUpon>staff_att.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stu_attance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stu_attance.Designer.cs">
+      <DependentUpon>Stu_attance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="subject_eve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subject_eve.Designer.cs">
+      <DependentUpon>subject_eve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher.Designer.cs">
+      <DependentUpon>Teacher.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add_book.resx">
+      <DependentUpon>Add_book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_class.resx">
+      <DependentUpon>Add_class.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Fine_stf.resx">
+      <DependentUpon>Add_Fine_stf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_fine_stu.resx">
+      <DependentUpon>Add_fine_stu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Loc.resx">
+      <DependentUpon>Add_Loc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Nonstaff.resx">
+      <DependentUpon>Add_Nonstaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_publisher.resx">
+      <DependentUpon>Add_publisher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Subject.resx">
+      <DependentUpon>Add_Subject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application_Form.resx">
+      <DependentUpon>Application_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Approval_form.resx">
+      <DependentUpon>Approval_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Art_Eve.resx">
+      <DependentUpon>Art_Eve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assign_class.resx">
+      <DependentUpon>Assign_class.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assign_Subject.resx">
+      <DependentUpon>Assign_Subject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Author.resx">
+      <DependentUpon>Author.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Booktype.resx">
+      <DependentUpon>Booktype.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee_amount.resx">
+      <DependentUpon>Fee_amount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fee_type.resx">
+      <DependentUpon>fee_type.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hel_eve.resx">
+      <DependentUpon>hel_eve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Issue_Book.resx">
+      <DependentUpon>Issue_Book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="language_eva.resx">
+      <DependentUpon>language_eva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login_page.resx">
+      <DependentUpon>login_page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_pg.resx">
+      <DependentUpon>Login_pg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="maths_eval.resx">
+      <DependentUpon>maths_eval.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Per_eve.resx">
+      <DependentUpon>Per_eve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Return Book.resx">
+      <DependentUpon>Return Book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="science_eva.resx">
+      <DependentUpon>science_eva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staff_att.resx">
+      <DependentUpon>staff_att.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stu_attance.resx">
+      <DependentUpon>Stu_attance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subject_eve.resx">
+      <DependentUpon>subject_eve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher.resx">
+      <DependentUpon>Teacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Img\images.png" />
+    <Content Include="Img\update-logo-png-7.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
